@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+</nav>
+</header>
+<section class="hero">
+<img src="/images/section-hero.png" alt="Hero Image" width="1800" height="1020">
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "fd1c7ae9-82d2-4c24-b859-acd711915ed9", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "4fe8e817-5b3c-487c-bcb8-566399d035a4", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</section>
+</body>
+</html>
